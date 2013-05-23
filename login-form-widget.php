@@ -19,7 +19,7 @@ function register_login_form_widget() {
 class Login_Form_Widget extends WP_Widget {
 
 	function __construct() {
-		$widget_ops = array('classname' => 'login-form-widget', 'description' => __( 'About this widget', 'login-form-widget' ) );
+		$widget_ops = array('classname' => 'login-form-widget', 'description' => __( 'Show a login form.', 'login-form-widget' ) );
 		$control_ops = array( 'width' => 300 );
 		parent::WP_Widget( 'login_form_widget', __( 'Login Form', 'login-form-widget' ), $widget_ops, $control_ops );
 	}
